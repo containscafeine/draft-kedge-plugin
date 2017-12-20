@@ -1,10 +1,13 @@
 name: ticker
+labels:
+  "draft": "frontend"
 containers:
-- image: surajd/ticker:0.1
+- image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+  ports:
+  - containerPort: 5000
   env:
   - name: REDIS_HOST
     value: redis
 services:
-- type: NodePort
-  portMappings:
+- portMappings:
   - 15000:5000
