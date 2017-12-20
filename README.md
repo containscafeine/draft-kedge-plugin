@@ -19,7 +19,7 @@
   - containerPort: 5000
   ```
 - That's it! Now start your iterative development using the following commands:
-  `draft kedge initialize <app name> <kedge file>`
-  `draft up`
-  `draft connect`
-  Rinse and repeat!
+  - `draft kedge initialize <app name> <kedge file>`
+  - `draft up`
+  - `draft connect`
+  - Rinse and repeat!
