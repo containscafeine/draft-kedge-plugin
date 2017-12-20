@@ -24,6 +24,8 @@ EOF
 initialize() {
   mkdir -p charts/$1
   helm create charts/$1 
+  rm -rf charts/$1/templates/*
+  echo > charts/$1/values.yaml
   cat > draft.toml << EOF
 [environments]
   [environments.development]
