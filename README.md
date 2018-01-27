@@ -1,7 +1,7 @@
 ### Draft plugin for Kedge
 
 - Install using:
-  `draft plugin install https://github.com/containscafeine/kedge-draft-plugin`
+  `draft plugin install https://github.com/kedgeproject/kedge-draft-plugin`
 
 - Make sure there is a Dockerfile for Draft to use to build your container image
 
